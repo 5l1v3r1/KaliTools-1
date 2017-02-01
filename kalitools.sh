@@ -4,7 +4,6 @@ help_menu(){
     echo "usage: ${0##*/} <option>"
     echo
     echo "Optons:"
-    echo "     --add-keys        :  add the Kali keys"
     echo "     --add-sources     :  add the Kali repository"
     echo "     --remove-sources  :  remove the Kali repositorys"
     echo "     --version         :  print the version"
@@ -28,12 +27,6 @@ fi
 case $1 in
     --help)
         help_menu
-    ;;
-
-    --add-keys)
-        sudo apt-key adv --keyserver pgp.mit.edu --recv-keys ED444FF07D8D0BF6
-        sudo apt update
-        exit 0
     ;;
 
     --add-sources)
