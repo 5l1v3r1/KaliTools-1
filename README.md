@@ -1,3 +1,3 @@
 # KaliTools
 
-With this simple script you can install and uninstall the Kali tools.
+Shell Script to add the Kali repositories an sources to install all the pentesting tools.
